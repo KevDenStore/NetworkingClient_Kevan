@@ -21,11 +21,11 @@ public class NetworkingClient {
                         InputStream clientIn = client.getInputStream();
                         BufferedReader br = new BufferedReader(new InputStreamReader(clientIn));
 
-                        BufferedReader stdIn = new BufferedReader(newInputStreamReader(system.in));
+                        BufferedReader stdIn = new BufferedReader(new InputStreamReader(System.in));
 
                         System.out.println("Enter your name. type Bye to exit. ");
 
-                        msg = stdIn.read.Line().trim();
+                        msg = stdIn.readLine().trim();
                         pw.println(msg);
 
                         System.out.println("Message returned from the server = " + br.readLine());
